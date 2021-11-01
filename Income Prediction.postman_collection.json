@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "f937f4cf-9b34-42c3-95b6-86ef727267af",
+		"name": "Income Prediction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Incame Predict (local)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 45,\n    \"workclass\": \"'rivate\",\n    \"fnlwgt\": 209642,\n    \"education\": \"masters\",\n    \"education-num\": 14,\n    \"marital-status\": \"married-civ-spouse\",\n    \"occupation\": \"exec-managerial\",\n    \"relationship\": \"husband\",\n    \"race\": \"white\",\n    \"sex\": \"male\",\n    \"capital-gain\": 0,\n    \"capital-loss\": 0,\n    \"hours-per-week\": 45,\n    \"native-country\": \"italy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9696/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9696",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incame Predict (heroku)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ml-zoomcamp-midterm-project.herokuapp.com/heartbeat",
+					"protocol": "http",
+					"host": [
+						"ml-zoomcamp-midterm-project",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"heartbeat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incame Predict Hearbeat (heroku)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 45,\n    \"workclass\": \"private\",\n    \"fnlwgt\": 209642,\n    \"education\": \"masters\",\n    \"education-num\": 14,\n    \"marital-status\": \"married-civ-spouse\",\n    \"occupation\": \"exec-managerial\",\n    \"relationship\": \"husband\",\n    \"race\": \"white\",\n    \"sex\": \"male\",\n    \"capital-gain\": 0,\n    \"capital-loss\": 0,\n    \"hours-per-week\": 45,\n    \"native-country\": \"italy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ml-zoomcamp-midterm-project.herokuapp.com/predict",
+					"protocol": "http",
+					"host": [
+						"ml-zoomcamp-midterm-project",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
