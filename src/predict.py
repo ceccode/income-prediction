@@ -27,8 +27,6 @@ def predict():
     dval = xgb.DMatrix(X, feature_names=model_features)
     y_pred = model.predict(dval, ntree_limit=model.best_iteration)
 
-    print()
-
     result = {
         'income_up_to_50K_probability': float(y_pred)
     }
