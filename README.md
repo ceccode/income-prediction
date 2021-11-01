@@ -1,4 +1,7 @@
-# Midterm project
+# Income prediction
+
+Machine Learning Zoomcamp midterm project: [https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/07-midterm-project](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/07-midterm-project).
+
 
 **Income classification** 
 
@@ -7,18 +10,18 @@ Prediction task is to determine whether a person makes over 50K a year.
 ## Dataset
 
 * [https://www.kaggle.com/lodetomasi1995/income-classification](https://www.kaggle.com/lodetomasi1995/income-classification)
-* Copy of the dataset: [income_evaluation.csv](./income_evaluation.csv)
+* Copy of the dataset: [income_evaluation_dataset.csv](./../midterm-project/income_evaluation_dataset.csv)
 
 ## Notebook
 
 * Colab:https://colab.research.google.com/drive/14O27isuk8rJFNOo_srXqnHl_nuBfa6GE
-* copy of the notebook here: [notebook.ipynb](./notebook.ipynb)
+* copy of the notebook here: [notebook.ipynb](./ml_zoomcamp_midterm_project_Income_classification.ipynb)
 
 ## TLDR; Use the API
 
 Predict if a certain person income is up to 50K using /predict API.
 
-Endopoint:
+Endpoint:
 
 * https://ml-zoomcamp-midterm-project.herokuapp.com
 
@@ -90,9 +93,12 @@ curl --location --request POST 'http://localhost:9696/predict' \
 
 Python required. For more see: [https://packaging.python.org/tutorials/installing-packages/](https://packaging.python.org/tutorials/installing-packages/).
 
+in /src dir:
+
 ```
 pip install pipenv
 pipenv install
+pipenv shell
 python predict.py
 ```
 
@@ -186,3 +192,7 @@ Download postman collection
 * [Income Prediction.postman_collection.json](./Income%20Prediction.postman_collection.json)
 
 and import it in your postman account to run it.
+
+## LICENSE
+
+[LICENSE](./../midterm-project/LICENSE)
